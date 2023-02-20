@@ -26,4 +26,4 @@ ENV TZ=Europe/Moscow \
 #COPY sphinx.conf /etc/nginx/conf.d/default.conf
 
 # Copy documentation from build container
-COPY --from=build /documents/docs/master/ /usr/share/nginx/html/
+COPY --from=build /documents/build/html/master /usr/share/nginx/html/
